@@ -1,0 +1,45 @@
+% Propiedades del documento
+\input{propiedades.tex}
+
+% Inicio del documento
+\begin{document}
+
+% Portada
+\thispagestyle{empty}
+\input{0-Portada/text.tex}
+\newpage
+
+% ROMAN
+%====================================================
+\pagenumbering{roman}
+\def\@roman#1{\romannumeral #1} % numeros romanos en minúscula
+
+\tableofcontents
+\newpage
+
+
+% ARABIC
+%====================================================
+\pagenumbering{arabic}
+
+\section{Introducción}\label{sec:1}
+    \input{1-Introduccion/text}
+    \newpage
+
+\section{Sección 2}\label{sec:2}
+    \input{2-Seccion2/text}
+    \newpage
+    
+\section{Sección 3}\label{sec:3}
+    \input{3-Seccion3/text}
+    \newpage
+
+\section{Conclusión}\label{sec:4}
+    \input{Conclusion/text}
+    \newpage 
+    
+\section{Bibliografía}\label{sec:5}
+    \input{Bibliografia/text}
+    \newpage  
+
+\end{document}

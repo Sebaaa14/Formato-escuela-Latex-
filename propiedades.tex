@@ -1,0 +1,73 @@
+% Algunas propiedades del documento
+\documentclass[12pt,letterpaper,spanish]{article}
+
+% Fuente Times New Roma
+\usepackage[T1]{fontenc}
+\usepackage{tabto}
+
+%Multi- row
+\usepackage{multirow}
+
+% Colores en tablas
+\usepackage{xcolor,colortbl}
+\usepackage{tabularx}
+
+% Caracteres en español
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+
+% Para hacer comentarios
+\usepackage{verbatim}
+
+% Hace @ usable
+\makeatletter
+
+% Márgenes
+\usepackage[margin=2.5cm,bindingoffset=0.5cm]{geometry}
+%\newgeometry para cambiar la geometria en cualquier parte del documento
+
+% Imágenes
+\usepackage{graphicx}
+\graphicspath{ {Z-Imagenes/} }
+\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{color}  
+\usepackage{blindtext}  
+
+
+
+% Para las lineas punteadas en el índice
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\newcommand\mydotfill{\cftdotfill{\cftdotsep}}
+
+% Hyperlinks
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    urlcolor={black}
+}
+
+% Para pseudo-codigo
+\usepackage{listings}
+
+% Pone numero de pagina a la derecha
+\usepackage{scrlayer-scrpage}
+\setlength{\headheight}{1.1\baselineskip}
+\ifoot[]{}
+\cfoot[]{}
+\ofoot[\pagemark]{\pagemark}
+\pagestyle{scrplain}
+
+% Para que las tablas no se salgan de la sección
+\usepackage{float}
+
+\usepackage[final]{pdfpages}
+\usepackage{array}
+
+%\setlength\extrarowheight{3pt}   %% put it here for making it global
+\setlength\arrayrulewidth{1pt}
+\setlength\extrarowheight{3pt}
+
